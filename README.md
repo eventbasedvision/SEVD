@@ -29,6 +29,8 @@ SEVD provides multi-view (360°) dataset comprising 27 hr of fixed and 31 hr of 
 SEVD
 ├── LICENSE
 ├── images/
+├── rvt/
+├── ultralytics/
 ├── README.md
 ├── carla/ # data generaton pipeline
 ```
@@ -40,8 +42,8 @@ SEVD
 
 The implementation of these models for SEVD can be found here.
 
-[RVT](https://github.com/eventbasedvision/eTraM/tree/main/rvt_eTram) |
-[YOLO](https://github.com/eventbasedvision/eTraM/tree/main/ultralytics_eTram/yolo_eTram) |
+[RVT](https://github.com/eventbasedvision/SEVD/tree/main/rvt) |
+[YOLO](https://github.com/eventbasedvision/SEVD/tree/main/ultralytics/yolo) |
 [RED]()
 
 # License
