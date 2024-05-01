@@ -5,7 +5,7 @@ import pygame
 import cv2
 import traceback
 import json
-from bb import create_kitti_datapoint
+from carla.bounding_boxes import create_kitti_datapoint
 import concurrent.futures
 
 
@@ -552,10 +552,6 @@ def saveRgbImage(output, filepath, world, sensor, ego_vehicle, dvs, depth):
             filepath, f'{output.frame}.txt'))
         save_kitti_3d_format(kitti3dbbDVS, os.path.join(
             filepath, f'dvs-{output.frame}.txt'))
-        intrinsic_matrix = get_intrinsic_matrix(
-            output.height, output.width, output.fov)
-        save_calibration_matrices(os.path.join(
-            filepath, f'calib-{output.frame}.txt'), intrinsic_matrix)
 
     except Exception as error:
         print("An exception occurred:", error)

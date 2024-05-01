@@ -272,10 +272,10 @@ def main():
                         process_fixed, i, frame_id) for i in range(len(fixed))]
                     concurrent.futures.wait(futures)
 
-                # progress = step / duration
-                # current_weather = interpolate_weather(
-                #     start_weather, end_weather, progress)
-                # world.set_weather(current_weather)
+                progress = step / duration
+                current_weather = interpolate_weather(
+                    start_weather, end_weather, progress)
+                world.set_weather(current_weather)
     finally:
         # stop pedestrians (list is [controller, actor, controller, actor ...])
         for i in range(0, len(w_all_actors)):

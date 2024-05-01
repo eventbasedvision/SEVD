@@ -3,7 +3,6 @@ from carla import Transform
 
 from datadescriptor import KittiDescriptor
 from camera_utils import *
-# from examples.client_bounding_boxes import ClientSideBoundingBoxes
 
 import math
 import logging
