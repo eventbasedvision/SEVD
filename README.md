@@ -40,11 +40,36 @@ SEVD
 <img src="./images/fixed-perception-baselines.png"> </img>
 <img src="./images/ego-perception-baselines.png"> </img>
 
+# Converting .npz (xytp) Event Stream Files for RVT and RED Training
+
+This guide provides instructions on how to convert .npz (xytp) event stream files for training RVT (Random View Transformation) and RED (Recurrent Event Detection) models.
+
+## Step 1: Compile .npz Files
+
+- Compile the individual .npz files into a single file.
+
+## Step 2: Convert to .hdf5 for RVT Training
+
+- Convert the compiled .npz file to an .hdf5 file format, which is suitable for RVT training.
+
+## Step 3: Convert to .csv Files
+
+- Convert the .npz file to .csv files for further processing.
+
+## Step 4: Convert to Metavision HDF5 Format
+
+- Use the Metavision SDK (Software Development Kit) to convert the .csv files to Metavision proprietary .hdf5 format. Refer to the [Metavision SDK documentation](https://docs.prophesee.ai/stable/index.html) for detailed instructions.
+
+## Step 5: Train RED
+
+- Utilize the generated .hdf5 files from the previous step to train the RED model.
+
+Following these steps will prepare your event stream data for training RVT and RED models effectively.
+
 The implementation of these models for SEVD can be found here.
 
 [RVT](https://github.com/eventbasedvision/SEVD/tree/main/rvt) |
 [YOLO](https://github.com/eventbasedvision/SEVD/tree/main/ultralytics/yolo) |
-[RED]()
 
 # License
 
