@@ -69,6 +69,7 @@ def main():
     SimulationParams.end_weather = args.end_weather
     SimulationParams.duration = args.duration
 
+    world = client.load_world(SimulationParams.town_map)
     world = client.get_world()
 
     # Remove all parked vehicles etc.
